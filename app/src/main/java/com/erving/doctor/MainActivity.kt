@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-//        super.onBackPressed()
+//        super.onBackPressed()   //Don't run this which will kill this activiy
         val intent= Intent(Intent.ACTION_MAIN)
 //        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         intent.flags= Intent.FLAG_ACTIVITY_NEW_TASK
