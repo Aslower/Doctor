@@ -34,8 +34,8 @@
 
         <!--Label is used on the bar.-->
         <activity
-            android:name=".LoginPage"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:name=".LoginPage">
 
         </activity>
 

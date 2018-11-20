@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Doctor</string>
+    <string name="stethoscope">stethoscope</string>
+
 </resources>
