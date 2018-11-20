@@ -5,7 +5,9 @@
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="register">Register</string>
-    <string name="forgetPassword">ForgetPassword</string>
+    <string name="forgetPassword">Forget Password?</string>
     <string name="login">Login</string>
+    <string name="errorPassword">Password must contain at least 8 characters.</string>
+
 
 </resources>
