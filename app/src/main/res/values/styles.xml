@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="@style/Theme.MaterialComponents.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -10,12 +10,14 @@
     </style>
 
     <style name="Erving.FullScreen"
-        parent="@style/Theme.AppCompat.Light.NoActionBar">
+        parent="@style/Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
 
+
     </style><!--<style name="Theme.AppCompat.Light.NoActionBar.FullScreen"-->
+
 
 </resources>

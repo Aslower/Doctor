@@ -14,7 +14,7 @@ class LoginPage:AppCompatActivity() {
         Toast.makeText(this,"LoginPage",Toast.LENGTH_SHORT).show()
     }
 
-    fun onLogin(){
+    fun ClickLogin(){
 
     }
 
