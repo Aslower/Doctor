@@ -12,10 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Toast.makeText(this,"MainActivity", Toast.LENGTH_SHORT).show()
-        if(savedInstanceState==null){
-            val intent=Intent(this,LoginPage::class.java)
-            startActivity(intent)
-        }
+//        if(savedInstanceState==null){
+//            val intent=Intent(this,LoginPage::class.java)
+//            startActivity(intent)
+//        }
     }
 
     override fun onBackPressed() {

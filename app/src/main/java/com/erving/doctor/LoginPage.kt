@@ -27,19 +27,21 @@ class LoginPage:AppCompatActivity() {
 
         login.setOnClickListener {
             Toast.makeText(this,"loginButton",Toast.LENGTH_SHORT).show()
-            if(!isPassWordValid(password.text)){
-                password.error=getString(R.string.errorPassword)
-            }else{
-                password.error=null
-                val intent=Intent(this,MainActivity::class.java)
-                startActivity(intent)
-                finish()
-            }
-
+//            if(!isPassWordValid(password.text)){
+//                password.error=getString(R.string.errorPassword)
+//            }else{
+//                password.error=null
+//                val intent=Intent(this,MainActivity::class.java)
+//                finish()
+//                startActivity(intent)
+//
+//            }
+            val intent=Intent(this,MainActivity::class.java)
+            finish()
+            startActivity(intent)
         }
+
     }
-
-
 
     private fun isPassWordValid(text:Editable?):Boolean{
         return text!=null&&text.length>=8

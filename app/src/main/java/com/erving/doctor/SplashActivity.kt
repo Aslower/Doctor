@@ -14,7 +14,6 @@ class SplashActivity:AppCompatActivity(){
         setContentView(R.layout.splash)
         Toast.makeText(this,"SplashActiviy",Toast.LENGTH_SHORT).show()
 
-
         //Jump to LoginPage
         val handler = Handler() //Handler handler = new Handler();
         handler.postDelayed({ //handler.postDelayed(new Runnable() {
