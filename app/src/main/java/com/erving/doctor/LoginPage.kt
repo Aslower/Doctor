@@ -8,6 +8,7 @@ import android.text.Editable
 import android.widget.Toast
 import kotlinx.android.synthetic.main.login.*
 import kotlinx.android.synthetic.main.login.view.*
+//import com.tencent.mm.opensdk.openapi.WXTextObject
 
 class LoginPage:AppCompatActivity() {
 
@@ -15,6 +16,10 @@ class LoginPage:AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login)
         Toast.makeText(this, "LoginPage", Toast.LENGTH_SHORT).show()
+//        if(savedInstanceState!=null){
+//            val intent=Intent(this,MainActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 
     override fun onResume() {
@@ -40,6 +45,10 @@ class LoginPage:AppCompatActivity() {
             finish()
             startActivity(intent)
         }
+//        Final SendAuth.Req req = new SendAuth.Req();
+//        req.scope = "snsapi_userinfo";
+//        req.state = "wechat_sdk_demo_test";
+//        api.sendReq(req);
 
     }
 
