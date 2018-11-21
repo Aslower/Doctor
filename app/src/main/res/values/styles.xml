@@ -19,5 +19,9 @@
 
     </style><!--<style name="Theme.AppCompat.Light.NoActionBar.FullScreen"-->
 
-
+    <style name="Erving.StatusBar.Transparent"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+<!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
 </resources>
