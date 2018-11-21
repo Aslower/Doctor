@@ -25,7 +25,7 @@ class SplashActivity:AppCompatActivity(){
             finish()
         }, 1500)  //毫秒
 
-
+test
 
     }
 
