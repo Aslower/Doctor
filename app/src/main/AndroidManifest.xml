@@ -26,7 +26,7 @@
         </activity>
         <activity
             android:name=".Activity.MainActivity"
-            android:theme="@style/Erving.StatusBar.Transparent">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -42,7 +42,7 @@
         <!-- Label is used on the bar. -->
         <activity
             android:name=".Activity.LoginPage"
-            android:theme="@style/Erving.StatusBar.Transparent">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
 
         </activity>
     </application>

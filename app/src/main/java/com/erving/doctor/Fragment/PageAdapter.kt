@@ -7,6 +7,7 @@ import android.support.v4.app.FragmentPagerAdapter
 import com.erving.doctor.Fragment.Check
 import com.erving.doctor.Fragment.Encyclopedia
 import com.erving.doctor.Fragment.History
+import com.erving.doctor.R.id.toolBar
 
 //ViewPager类需要一个PagerAdapter适配器类给它提供数据
 //ViewPager经常和Fragment一起使用，并且提供了专门的

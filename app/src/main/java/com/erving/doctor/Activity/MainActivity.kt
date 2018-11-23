@@ -13,6 +13,10 @@ import android.support.design.widget.TabLayout
 import android.support.v4.content.ContextCompat
 
 import android.support.v4.view.ViewCompat
+import android.support.v7.widget.Toolbar
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.widget.TextView
 import com.erving.doctor.Fragment.Check
 import com.erving.doctor.Fragment.Encyclopedia
@@ -52,6 +56,9 @@ class MainActivity : AppCompatActivity() {
 //            startActivity(intent)
 //        }
 
+        setSupportActionBar(toolBar)
+
+
     }
 
     override fun onStart() {
@@ -77,11 +84,18 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.tool_bar,menu)
+        return true
+    }
 
-
-
-
-
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        when(item?.itemId){
+            R.id.User->Toas("User")
+            R.id.Magnifier->Toas("Magnifier")
+        }
+        return true
+    }
 
 
 
