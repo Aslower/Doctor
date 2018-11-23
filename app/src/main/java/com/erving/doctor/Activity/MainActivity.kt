@@ -49,7 +49,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.drawer)
         Toas("MainActivity.OnCreate")
 //        if(savedInstanceState==null){
 //            val intent=Intent(this,LoginPage::class.java)
