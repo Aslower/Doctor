@@ -25,11 +25,6 @@ class SplashActivity:AppCompatActivity(){
             finish()
         }, 1500)  //毫秒
 
-<<<<<<< HEAD:app/src/main/java/com/erving/doctor/SplashActivity.kt
-=======
-
->>>>>>> mainActivity:app/src/main/java/com/erving/doctor/Activity/SplashActivity.kt
-
     }
 
 
