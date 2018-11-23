@@ -6,15 +6,15 @@ import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.text.Editable
 import android.widget.Toast
-import kotlinx.android.synthetic.main.login.*
-import kotlinx.android.synthetic.main.login.view.*
+import kotlinx.android.synthetic.main.activity_login.*
+
 //import com.tencent.mm.opensdk.openapi.WXTextObject
 
 class LoginPage:AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.login)
+        setContentView(R.layout.activity_login)
         Toast.makeText(this, "LoginPage", Toast.LENGTH_SHORT).show()
 //        if(savedInstanceState!=null){
 //            val intent=Intent(this,MainActivity::class.java)

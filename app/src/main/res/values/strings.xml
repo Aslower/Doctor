@@ -8,6 +8,11 @@
     <string name="forgetPassword">Forget Password?</string>
     <string name="login">Login</string>
     <string name="errorPassword">Password must contain at least 8 characters.</string>
+    <string name="History">历史</string>
+    <string name="Check">检查</string>
+    <string name="Encyclopedia">百科</string>
+
+
 
             <!--Add for Login-->
     <string name="text_accounts">All Accounts</string>

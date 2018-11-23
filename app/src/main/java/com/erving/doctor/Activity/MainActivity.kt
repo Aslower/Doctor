@@ -3,19 +3,40 @@ package com.erving.doctor
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import android.support.v4.app.Fragment
+import android.support.v4.app.FragmentManager
+import android.support.v4.app.FragmentPagerAdapter
+import android.support.v4.view.ViewPager
+import android.widget.TableLayout
 import android.widget.Toast
+import android.support.design.widget.TabLayout
+import android.support.v4.content.ContextCompat
+
+import android.support.v4.view.ViewCompat
+import android.widget.TextView
+import kotlinx.android.synthetic.main.activity_main.*
+import java.util.ArrayList
+
 
 class MainActivity : AppCompatActivity() {
+//    private val tablayou: TabLayout? = null
+//    private val viewpage: ViewPager? = null
+
+//    private var tabIndicators: List<String>? = null
+
+    val tabIndicators = ArrayList<String>()
+    var tabFragments = ArrayList<Fragment?>()
+//    private var tabFragments: List<Fragment>? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Toast.makeText(this,"MainActivity", Toast.LENGTH_SHORT).show()
+        Toas().showToast("MainActivity")
 //        if(savedInstanceState==null){
 //            val intent=Intent(this,LoginPage::class.java)
 //            startActivity(intent)
 //        }
+
     }
 
     override fun onBackPressed() {
@@ -26,6 +47,14 @@ class MainActivity : AppCompatActivity() {
         intent.addCategory(Intent.CATEGORY_HOME)
         startActivity(intent)
     }
+
+
+
+
+
+
+
+
 
 
 }
