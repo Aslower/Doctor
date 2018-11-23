@@ -12,7 +12,9 @@ class History : Fragment() {
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               FrasavedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_history, container, false)
+        return inflater.inflate(R.layout.fragment_history,
+                container,
+                false)
     }
 
 }

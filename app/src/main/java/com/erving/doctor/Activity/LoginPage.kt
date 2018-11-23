@@ -1,4 +1,4 @@
-package com.erving.doctor
+package com.erving.doctor.Activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,8 @@ import android.os.PersistableBundle
 import android.support.v7.app.AppCompatActivity
 import android.text.Editable
 import android.widget.Toast
+import com.erving.doctor.R
+import com.erving.doctor.Toas
 import kotlinx.android.synthetic.main.activity_login.*
 
 //import com.tencent.mm.opensdk.openapi.WXTextObject
@@ -15,7 +17,7 @@ class LoginPage:AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-        Toast.makeText(this, "LoginPage", Toast.LENGTH_SHORT).show()
+        Toas("LoginP")
 //        if(savedInstanceState!=null){
 //            val intent=Intent(this,MainActivity::class.java)
 //            startActivity(intent)

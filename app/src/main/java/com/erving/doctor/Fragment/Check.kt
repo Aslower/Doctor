@@ -8,13 +8,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.erving.doctor.R
+import com.erving.doctor.Toas
 
 class Check : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater,
                               container: ViewGroup?,
                               FrasavedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_check, container, false)
+        Toas("Check")
+        return inflater.inflate(R.layout.fragment_check,
+                container,
+                false)
     }
 
 }

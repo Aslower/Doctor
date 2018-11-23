@@ -20,18 +20,18 @@
         <!-- android:theme="@style/Theme.Shrine" -->
 
         <activity
-            android:name=".SplashActivity"
+            android:name=".Activity.SplashActivity"
             android:theme="@style/Erving.FullScreen">
+
+        </activity>
+        <activity
+            android:name=".Activity.MainActivity"
+            android:theme="@style/Erving.StatusBar.Transparent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:theme="@style/Erving.StatusBar.Transparent">
-
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action." /> -->
@@ -41,7 +41,7 @@
 
         <!-- Label is used on the bar. -->
         <activity
-            android:name=".LoginPage"
+            android:name=".Activity.LoginPage"
             android:theme="@style/Erving.StatusBar.Transparent">
 
         </activity>

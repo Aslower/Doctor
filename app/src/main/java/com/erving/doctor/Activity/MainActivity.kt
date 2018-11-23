@@ -1,4 +1,4 @@
-package com.erving.doctor
+package com.erving.doctor.Activity
 
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
@@ -14,8 +14,22 @@ import android.support.v4.content.ContextCompat
 
 import android.support.v4.view.ViewCompat
 import android.widget.TextView
+import com.erving.doctor.Fragment.Check
+import com.erving.doctor.Fragment.Encyclopedia
+import com.erving.doctor.Fragment.History
+import com.erving.doctor.PageAdapter
+import com.erving.doctor.R
+import com.erving.doctor.Toas
 import kotlinx.android.synthetic.main.activity_main.*
 import java.util.ArrayList
+import android.widget.RadioGroup
+import com.erving.doctor.R.id.*
+import com.erving.doctor.R.id.tabLayout
+import com.erving.doctor.R.id.viewPager
+
+
+
+
 
 
 class MainActivity : AppCompatActivity() {
@@ -24,19 +38,33 @@ class MainActivity : AppCompatActivity() {
 
 //    private var tabIndicators: List<String>? = null
 
-    val tabIndicators = ArrayList<String>()
-    var tabFragments = ArrayList<Fragment?>()
+//    val tabIndicators = ArrayList<String>()
+//    var tabFragments = ArrayList<Fragment?>()
 //    private var tabFragments: List<Fragment>? = null
+    private val fragmentList = ArrayList<Fragment>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        Toas().showToast("MainActivity")
+        Toas("MainActivity.OnCreate")
 //        if(savedInstanceState==null){
 //            val intent=Intent(this,LoginPage::class.java)
 //            startActivity(intent)
 //        }
 
+    }
+
+    override fun onStart() {
+        super.onStart()
+        fragmentList.add(History())
+        fragmentList.add(Check())
+        fragmentList.add(Encyclopedia())
+
+
+        viewPager.adapter = PageAdapter(this,supportFragmentManager)
+//        tabLayout.setupWithViewPager(viewPager)
+        tabLayout.addOnTabSelectedListener(TabLayout.ViewPagerOnTabSelectedListener(viewPager))
+        viewPager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
     }
 
     override fun onBackPressed() {

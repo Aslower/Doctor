@@ -1,10 +1,11 @@
-package com.erving.doctor
+package com.erving.doctor.Activity
 
 import android.os.Bundle
 import android.os.Handler
 import android.support.v7.app.AppCompatActivity
 import android.content.Intent
 import android.widget.Toast
+import com.erving.doctor.R
 
 //为何在instant模式下oppo无法打开app
 class SplashActivity:AppCompatActivity(){
