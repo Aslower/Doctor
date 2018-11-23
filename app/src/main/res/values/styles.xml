@@ -22,6 +22,10 @@
     <style name="Erving.StatusBar.Transparent"
         parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:windowTranslucentStatus">true</item>
+        <item name="windowNoTitle">true</item>
+
     </style>
+
+
 <!--        <item name="android:statusBarColor">@android:color/transparent</item>-->
 </resources>

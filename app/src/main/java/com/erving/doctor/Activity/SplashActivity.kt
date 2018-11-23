@@ -11,7 +11,7 @@ class SplashActivity:AppCompatActivity(){
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.splash)
+        setContentView(R.layout.activity_splash)
         Toast.makeText(this,"SplashActiviy",Toast.LENGTH_SHORT).show()
 
         //Jump to LoginPage
@@ -25,7 +25,7 @@ class SplashActivity:AppCompatActivity(){
             finish()
         }, 1500)  //毫秒
 
-test
+
 
     }
 

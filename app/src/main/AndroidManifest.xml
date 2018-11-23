@@ -13,6 +13,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/appName"
+        android:name="com.erving.doctor.doctor"
         android:roundIcon="@mipmap/icon"
         android:supportsRtl="true">
 
@@ -30,6 +31,7 @@
         <activity
             android:name=".MainActivity"
             android:theme="@style/Erving.StatusBar.Transparent">
+
 
             <!-- <intent-filter> -->
             <!-- <action android:name="android.intent.action." /> -->

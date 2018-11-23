@@ -39,6 +39,7 @@
 
         <android.support.design.widget.TextInputEditText
             android:id="@+id/UserName"
+            android:drawableStart="@color/green"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:inputType="text"
@@ -62,6 +63,7 @@
         <android.support.design.widget.TextInputEditText
             android:id="@+id/password"
             android:layout_width="match_parent"
+            android:drawableStart="@color/green"
             android:layout_height="match_parent"
             android:inputType="textPassword"
             android:fitsSystemWindows="true" />
@@ -84,7 +86,7 @@
         android:fitsSystemWindows="true" />
 
     <!--Make sure your activity's style in manifests is Theme.MaterialComponents-->
-    <android.support.design.button.MaterialButton
+    <Button
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,7 +95,7 @@
         app:layout_constraintEnd_toStartOf="@+id/register"
         android:fitsSystemWindows="true" />
 
-    <android.support.design.button.MaterialButton
+    <Button
         android:id="@+id/forget"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="wrap_content"
