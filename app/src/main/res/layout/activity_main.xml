@@ -8,7 +8,6 @@
 <!--    android:fitsSystemWindows="true" is invaild.-->
 
 
-
     <android.support.v7.widget.Toolbar
         android:id="@+id/toolBar"
         android:layout_width="match_parent"
