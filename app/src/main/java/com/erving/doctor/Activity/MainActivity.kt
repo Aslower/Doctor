@@ -1,6 +1,8 @@
 package com.erving.doctor.Activity
 
+import android.app.Activity
 import android.content.Intent
+import android.os.Build
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -17,6 +19,8 @@ import android.support.v7.widget.Toolbar
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
+import android.view.View.SYSTEM_UI_FLAG_VISIBLE
+import android.view.WindowManager
 import android.widget.TextView
 import com.erving.doctor.Fragment.Check
 import com.erving.doctor.Fragment.Encyclopedia
